@@ -1,0 +1,52 @@
+
+body{
+  margin:5% 0;
+  counter-reset: Serial;
+}
+
+.table-data th::before{
+  counter-increment: Serial;
+		  content: "" counter(Serial) ": ";
+}
+*, ::after, ::before {
+    box-sizing: unset;
+}
+.container-fluid{
+  padding: 0;
+}
+.card{
+  margin: 3px;
+}
+.description{
+  height: 100px;
+  overflow: hidden;
+  font-size: small;
+}
+.card-body{
+  padding-bottom: 1px;
+}
+.card-img-top{
+  object-fit: contain;
+}
+.head-title th{
+  width: 50px;
+}
+.head-title{
+  width: 25px;
+}
+.list-details .row{
+  margin: 25px;
+}
+.subList li{
+  list-style: square;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.list-details .title{
+  font-size: large;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+}
+.table, tr, th, td{
+  border: 2px solid rgb(179, 173, 173);
+}

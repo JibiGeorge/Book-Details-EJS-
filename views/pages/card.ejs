@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="row justify-content-center m-2">
+        <% for (var i=0; i < product.length; i++) { %>
+            <div class="card col-sm-12 col-md-6 col-lg-3 col-xl-2">
+                <div>
+                    <img class="card-img-top" style="height:250px;"
+                        src="<%= product[i].image %>"
+                        alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <%= product[i].bookName %>
+                    </h5>
+                    <p class="card-text"><%= product[i].authorName %></p>
+                    <p class="card-text"><%= product[i].publishedDate %></p>
+                    <p class="card-text description"><%= product[i].description %></p>
+                </div>
+            </div>
+            <% } %>
+    </div>
+</div>

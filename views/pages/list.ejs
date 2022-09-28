@@ -1,0 +1,22 @@
+<div class="list-details">
+    <div class="row">
+        <ul class="list-group">
+            <% for (let i=0; i<product.length;i++) { %>
+                <li class="list-group-item ">
+                   <div class="title"> <%= product[i].bookName %></div>
+                        <ul class="subList">
+                            <li>
+                                <%= product[i].authorName %>
+                            </li>
+                            <li>
+                                <%= product[i].publishedDate %>
+                            </li>
+                            <li>
+                                <%= product[i].description %>
+                            </li>
+                        </ul>
+                </li>
+                <% } %>
+        </ul>
+    </div>
+</div>
